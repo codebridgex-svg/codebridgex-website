@@ -45,15 +45,15 @@ export default function BackgroundFX({ className }: Props) {
     resize();
 
     // Lights (subtle)
-    scene.add(new THREE.AmbientLight(new THREE.Color("#9aa3ff"), 0.22));
-    const key = new THREE.DirectionalLight(new THREE.Color("#39d5ff"), 0.55);
+    scene.add(new THREE.AmbientLight(new THREE.Color("#ffb3a3"), 0.22));
+    const key = new THREE.DirectionalLight(new THREE.Color("#FF6B35"), 0.55);
     key.position.set(6, 8, 6);
     scene.add(key);
 
     // Futuristic wire grid plane
     const gridGeo = new THREE.PlaneGeometry(70, 70, 40, 40);
     const gridMat = new THREE.MeshBasicMaterial({
-      color: 0x1b3b6b,
+      color: 0x6b3b1b,
       wireframe: true,
       transparent: true,
       opacity: 0.10,
@@ -83,7 +83,7 @@ export default function BackgroundFX({ className }: Props) {
 
     const particlesMat = new THREE.PointsMaterial({
       size: 0.028,
-      color: 0x79e7ff,
+      color: 0xFF6B35,
       transparent: true,
       opacity: 0.28,
       depthWrite: false,
@@ -108,7 +108,7 @@ export default function BackgroundFX({ className }: Props) {
     const arcPoints = arcCurve.getPoints(180);
     const arcGeo = new THREE.BufferGeometry().setFromPoints(arcPoints);
     const arcMat = new THREE.LineBasicMaterial({
-      color: 0x8b5dff,
+      color: 0xFF5722,
       transparent: true,
       opacity: 0.35,
     });
@@ -121,10 +121,10 @@ export default function BackgroundFX({ className }: Props) {
 
     const cubeGeo = new THREE.BoxGeometry(0.8, 0.8, 0.8);
     const cubeMatA = new THREE.MeshPhysicalMaterial({
-      color: new THREE.Color("#070a12"),
+      color: new THREE.Color("#120a07"),
       roughness: 0.25,
       metalness: 0.9,
-      emissive: new THREE.Color("#39d5ff"),
+      emissive: new THREE.Color("#FF5722"),
       emissiveIntensity: 0.55,
       transparent: true,
       opacity: 0.9,
@@ -132,7 +132,7 @@ export default function BackgroundFX({ className }: Props) {
       clearcoatRoughness: 0.2,
     });
     const cubeMatB = cubeMatA.clone();
-    cubeMatB.emissive = new THREE.Color("#8b5dff");
+    cubeMatB.emissive = new THREE.Color("#FF6B35");
     cubeMatB.emissiveIntensity = 0.45;
 
     const cubes: Array<{ mesh: THREE.Mesh; seed: number }> = [];
