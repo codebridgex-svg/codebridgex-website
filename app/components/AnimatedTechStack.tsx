@@ -24,7 +24,7 @@ export default function AnimatedTechStack() {
     {
       name: "Next.js",
       description: "The React framework for production",
-      color: "#000000",
+      color: "#FFFFFF",
       textColor: "#fff",
       category: "Framework",
     },
@@ -94,7 +94,7 @@ export default function AnimatedTechStack() {
     {
       name: "Three.js",
       description: "JavaScript 3D library",
-      color: "#000000",
+      color: "#FFFFFF",
       textColor: "#fff",
       category: "Graphics",
     },
@@ -108,7 +108,7 @@ export default function AnimatedTechStack() {
     {
       name: "Express",
       description: "Fast, minimalist web framework",
-      color: "#000000",
+      color: "#FFFFFF",
       textColor: "#fff",
       category: "Backend",
     },
