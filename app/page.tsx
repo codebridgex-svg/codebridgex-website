@@ -32,9 +32,7 @@ export default function Home() {
               </div>
               <div>
                 <div className="text-lg font-bold text-white">CodeBridgeX</div>
-                <div className="hidden md:block text-[11px] text-white/50">
-                  Building Bridges Between Ideas & Technology
-                </div>
+
               </div>
             </div>
 
